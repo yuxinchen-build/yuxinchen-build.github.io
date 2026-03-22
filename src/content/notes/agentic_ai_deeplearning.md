@@ -32,3 +32,17 @@ Behind the scenes, the agent SDK will create tool details in JSON format and it 
 
 ### Code execution
 Prompt LLM to write the code, the developer execute codes and pass the result to LLM to surface to the end user. 
+
+## Module 4 Practical tips for building agentic AI
+Build a quick system in a safe way and use this initial prototype to iterate. 
+
+## Module 5 Patterns for highly autonomous agents
+Multi agent workflows: rather than providing multiple tools, provide multiple agents. System prompt becomes "you have the following team of agents tow work with..."
+
+Key design decision: what is the communication pattern between multiple agents?
+
+### Communication patterns for multi-agent systems
+* Linear
+* Hierarchical: A manager communicates with other agents
+* Deeper hierarchy: multiple layers in the organization (less often)
+* All to all: anyone can talk to anyone. Prompt all agents that they can communicate with. (unpredicatble performance)
